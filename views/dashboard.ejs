@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f3f4f6;
+            color: #111827;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 16px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logout-btn {
+            background: #ef4444;
+            border: none;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .logout-btn:hover {
+            background: #dc2626;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .panel {
+            background: white;
+            height: 320px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .panel::before {
+            content: "Admin Panel";
+            display: block;
+            padding: 20px;
+            font-size: 14px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <span>Admin</span>
+
+    <!-- Logout -->
+    <form action="/admin-logout" method="get">
+        <button class="logout-btn">Logout</button>
+    </form>
+</header>
+
+<div class="container">
+    <div class="panel"></div>
+</div>
+
+</body>
+</html>

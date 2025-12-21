@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .welcome-container {
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 72px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      animation: slideDown 0.8s ease;
+    }
+
+    .username {
+      background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: bold;
+    }
+
+    .logout-btn {
+      margin-top: 40px;
+      padding: 15px 40px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      color: white;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .logout-btn:hover {
+      background: white;
+      color: #667eea;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Welcome, <span class="username"><%= userName %></span>! 👋</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    function logout() {
+        window.location.href = '/logout';
+      }
+  </script>
+</body>
+</html>
