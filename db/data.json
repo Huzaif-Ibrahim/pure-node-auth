@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "name": "Huzaif",
+        "email": "huzaif@gmail.com",
+        "password": "291b5006854e795feb27351307d9f8c090dec672b46f544bf764c76c9489a1e7fd0021fea6205f444c311822a13d28049f01e2b06fb580541de9da52afdebe55",
+        "salt": "23022c1d4463282f160e3cbe4a373ce4"
+    },
+    {
+        "name": "Elon",
+        "email": "elon@gmail.com",
+        "password": "d79d909456194a1626ce3f0e0064b3bf35f3082da8f419f9a2d80536f2372e047c6dac2890a47f3b8e4953b3a1f0f69706945fbcd787af7b4425d1c89faf008c",
+        "salt": "484a3403a102153da3aaed4cf5ca1d43"
+    }
+]
